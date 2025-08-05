@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Mini PBI - Web Depelopment 2025</title>
+        <style>
+            .cek {
+                background-color: blue;
+            }
+
+            #cek2 {
+                background-color: rgb(84, 119, 4);
+            }
+
+            li {
+                color: green;
+            }
+
+            input[type="text"] {
+                background-color: blueviolet;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1 class="cek" id="cek2">Mini PBI - Web Depelopment</h1>
+            <p style="color: red;">
+                Halo, SobatLS!
+            </p>
+            <input type="text" name="nama"><br><br>
+            
+            <li>
+                <a href="https://github.com/rianhidayat" target="_blank">Github</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/rianhidayat/" target="_blank">Linkedin</a>
+            </li><br>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <td>Rian Hidayat</td>
+                    <td>Bandung</td>
+                </tbody>
+            </table><br>
+
+            <button onclick="alert('Halo, SobatLS! HHH')">
+                Testing
+            </button><br>
+<br>
+            <button id="tombol">Klik Disini</button><br>
+            <p id="pesan">aa</p>
+            <br>
+
+        </header>
+        Copyright &copy; 2023 by Rian Hidayat
+
+        <script src="script.js"></script>
+
+        <script>
+            var a = 1;
+            var b = 2;
+
+            // alert(a + b);
+
+            // if (a != b) {
+            //     alert("Halo, SobatLS!");
+            // } else {
+            //     alert("Terima kasih");
+            // }
+
+            // for (let index = 0; index <= 3; index++) {
+            //     alert(index);
+            // }
+
+            // alert("Halo, SobatLS!");
+            document.getElementById("tombol").addEventListener("click", function () {
+                document.getElementById("pesan").textContent = "Halo, SobatLS!";
+            });
+
+        </script>
+    </body>
+
+</html>
